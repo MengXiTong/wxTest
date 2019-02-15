@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/userInfo/userInfo",
     "pages/index/index",
+    "pages/tableTest/tableTest",
+    "pages/userInfo/userInfo",
     "pages/logs/logs"
   ],
   "window":{

@@ -1,0 +1,76 @@
+<view class="container">
+    <view class="tableCol">
+        <view class="colr" style="width:43px">
+            <view class="colh">序号</view>
+            <view class="cold" wx:for="{{tableList}}" wx:for-item="item" wx:key="">
+                {{item.id}}
+            </view>
+        </view>
+        <view class="colr" style="width:75px">
+            <view class="colh">设备名称</view>
+            <view class="cold" wx:for="{{tableList}}" wx:for-item="item" wx:key="">
+                {{item.name}}
+            </view>
+        </view>
+        <view class="colr">
+            <view class="colh">型号</view>
+            <view class="cold" wx:for="{{tableList}}" wx:for-item="item" wx:key="">
+                {{item.model}}
+            </view>
+        </view>
+        <view class="colr">
+            <view class="colh">数量</view>
+            <view class="cold" wx:for="{{tableList}}" wx:for-item="item" wx:key="">
+                {{item.number}}
+            </view>
+        </view>
+        <view class="colr">
+            <view class="colh">单价</view>
+            <view class="cold" wx:for="{{tableList}}" wx:for-item="item" wx:key="">
+                {{item.singlePrice}}
+            </view>
+        </view>
+        <view class="colr">
+            <view class="colh">合计</view>
+            <view class="cold" style="line-height: calc({{tableList.length}} * 82rpx);height: calc({{tableList.length}} * 82rpx)">{{total}}</view>
+        </view>
+        <view class="colr" style="flex:1">
+            <view class="colh">备注</view>
+            <view class="cold" wx:for="{{tableList}}" wx:for-item="item" wx:key="">
+                {{item.remarks}}
+            </view>
+        </view>
+    </view>
+    <view class="table">
+        <view class="tr">
+            <view class="td" style="width:42px">{{tableList.length+1}}</view>
+            <view class="td elips1" style="width:74px">以上设备材料合计</view>
+            <view class="td" style="flex:1">小写：￥C1输入</view>
+        </view>
+        <view class="tr">
+            <view class="td" style="width:42px">{{tableList.length+2}}</view>
+            <view class="td" style="width:74px">运费</view>
+            <view class="td" style="flex:1">小写：￥C1输入</view>
+        </view>
+        <view class="tr">
+            <view class="td" style="width:42px">{{tableList.length+3}}</view>
+            <view class="td" style="width:74px">安装费</view>
+            <view class="td" style="flex:1">小写：￥C1输入</view>
+        </view>
+        <view class="tr">
+            <view class="td" style="width:42px">{{tableList.length+4}}</view>
+            <view class="td" style="width:74px">利税</view>
+            <view class="td" style="flex:1">小写：￥C1输入</view>
+        </view>
+        <view class="tr">
+            <view class="td" style="width:42px">{{tableList.length+5}}</view>
+            <view class="td" style="width:74px">总计</view>
+            <view class="td" style="flex:1">小写：￥C1输入</view>
+        </view>
+        <view class="tr">
+            <view class="td" style="width:42px">{{tableList.length+6}}</view>
+            <view class="td elips1" style="width:74px">最终优惠价</view>
+            <view class="td" style="flex:1">小写：￥C1输入</view>
+        </view>
+    </view>
+</view>
