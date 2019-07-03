@@ -1,10 +1,45 @@
 {
   "pages": [
+    "pages/status/status",
+    "pages/mapTest/mapTest",
     "pages/index/index",
     "pages/tableTest/tableTest",
     "pages/userInfo/userInfo",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/repair/repair",
+    "pages/register/register"
   ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FF6F92",
+    "backgroundColor": "#F9F9F9",
+    "list": [
+      {
+        "pagePath": "pages/status/status",
+        "text": "状态",
+        "iconPath": "/static/images/dossier.png",
+        "selectedIconPath": "/static/images/dossier1.png"
+      },
+      {
+        "pagePath": "pages/mapTest/mapTest",
+        "text": "定位",
+        "iconPath": "/static/images/dossier.png",
+        "selectedIconPath": "/static/images/dossier1.png"
+      },
+      {
+        "pagePath": "pages/repair/repair",
+        "text": "报修",
+        "iconPath": "/static/images/dossier.png",
+        "selectedIconPath": "/static/images/dossier1.png"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "我的",
+        "iconPath": "/static/images/me.png",
+        "selectedIconPath": "/static/images/me1.png"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

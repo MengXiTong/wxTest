@@ -1,3 +1,35 @@
-<view class="container">
-    <view>用户信息</view>
+<view>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    获取头像昵称
+  </button>
+  <block wx:else>
+    <view class="ver-center" style="display:flex;">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text bindtap="bindViewTap" style="flex:1;text-align:right;margin-right:10px;font-size:12px;color:#ff6f92">
+        去修改信息>
+      </text>
+    </view>
+    <view class="item row ver-center">
+      <text>姓名：{{userInfo.nickName}}</text>
+    </view>
+    <view class="item row ver-center">
+      <text>手机号：1326567876</text>
+    </view>
+    <view class="item row ver-center">
+      <text>性别：男</text>
+    </view>
+    <view class="item row ver-center">
+      <text>年龄：24</text>
+    </view>
+    <view class="item row ver-center">
+      <text>身高：180cm</text>
+    </view>
+    <view class="item row ver-center">
+      <text>使用轮椅的年限：2年</text>
+    </view>
+    <view class="item row ver-center">
+      <text class="col">报修历史</text>
+      <icon class="iconfont icon-chevronright" style="margin-right:-10px;color: #cccccc;"></icon>
+    </view>
+  </block>
 </view>

@@ -1,0 +1,37 @@
+<!-- pages/repair/repair.wxml -->
+<scroll-view scroll-y style="height: 100vh">
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>生产序列号：</text>
+    <input class="col" placeholder="请输入生产序列号" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>联系人：</text>
+    <input class="col" placeholder="请输入联系人" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>电话：</text>
+    <input class="col" type="number" placeholder="请输入电话" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>地址：</text>
+    <input class="col" placeholder="请输入地址" />
+  </view>
+  <view style="padding: 10px 18px;font-size: 16px;color: #333333;border-bottom: 1px solid #e8e8e8;">
+    <text class="must">*</text>
+    <text>报修内容：</text>
+    <textarea auto-height placeholder="请输入报修内容" style="margin-top:6px;" />
+  </view>
+  <view style="padding: 10px 18px;font-size: 16px;color: #333333;">
+    <text>上传图片：</text>
+  </view>
+  <view class="uploader-bd">
+    <view class="uploade-input-box">
+      <view class="uploade-input"></view>
+    </view>
+  </view>
+  <button class="btn-save">立即申请</button>
+</scroll-view>

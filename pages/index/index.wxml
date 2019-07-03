@@ -5,6 +5,9 @@
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text bindtap="bindUserTap">跳转至用户界面1</text>
+      <text bindtap="bindTap">测试1</text>
+      <text bindtap="bindMapTap">地图</text>
     </block>
   </view>
   <view class="usermotto">

@@ -1,0 +1,48 @@
+<!-- pages/register/register.wxml -->
+<scroll-view scroll-y style="height: 100vh">
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>生产序列号：</text>
+    <input class="col" placeholder="请输入生产序列号" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>姓名：</text>
+    <input class="col" placeholder="请输入姓名" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>手机号：</text>
+    <input type="number" class="col" placeholder="请输入手机号" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>性别：</text>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio">
+        <radio value="男" checked="{{true}}" />
+        男
+      </label>
+      <label class="radio" style="margin-left:20px;">
+        <radio value="女" checked="{{false}}" />
+        女
+      </label>
+    </radio-group>
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>年龄：</text>
+    <input type="number" class="col" placeholder="请输入年龄" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>身高：</text>
+    <input type="number" class="col" placeholder="请输入身高" />
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
+    <text>使用轮椅的年限：</text>
+    <input type="number" class="col" placeholder="请输入使用轮椅的年限" />
+  </view>
+  <button class="btn-save">提交</button>
+</scroll-view>

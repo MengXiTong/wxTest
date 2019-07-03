@@ -1,0 +1,18 @@
+<!-- pages/status/status.wxml -->
+<scroll-view scroll-y style="height: 100vh">
+  <view class="item row ver-center">
+    <text>轮椅的电量：10%</text>
+  </view>
+  <view class="item row ver-center">
+    <text>轮椅的里程：50公里</text>
+  </view>
+  <view class="item row ver-center">
+    <text>轮椅的故障：无</text>
+  </view>
+  <view class="item row ver-center">
+    <text>轮椅的当前状态：正常</text>
+  </view>
+  <view class="item row ver-center">
+    <text>厂家建议：请及时充电和更换轮胎</text>
+  </view>
+</scroll-view>
