@@ -43,7 +43,7 @@ Page({
   },
   bindViewTap() {
     wx.navigateTo({
-      url: '../register/register'
+      url: '../register/register?type=update'
     });
   }
 });

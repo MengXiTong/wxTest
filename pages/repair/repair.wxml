@@ -7,6 +7,12 @@
   </view>
   <view class="item row ver-center">
     <text class="must">*</text>
+    <text>产品型号：</text>
+    <input class="col" placeholder="请选择产品型号" />
+    <icon class="iconfont icon-chevronright" style="margin-right:-10px;color: #cccccc;"></icon>
+  </view>
+  <view class="item row ver-center">
+    <text class="must">*</text>
     <text>联系人：</text>
     <input class="col" placeholder="请输入联系人" />
   </view>

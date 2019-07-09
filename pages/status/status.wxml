@@ -4,7 +4,7 @@
     <text>轮椅的电量：10%</text>
   </view>
   <view class="item row ver-center">
-    <text>轮椅的里程：50公里</text>
+    <text>行驶的里程：50公里</text>
   </view>
   <view class="item row ver-center">
     <text>轮椅的故障：无</text>
