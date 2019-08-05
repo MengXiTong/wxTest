@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/test/test",
+    "pages/index/index",
     "pages/status/status",
     "pages/mapTest/mapTest",
-    "pages/index/index",
     "pages/tableTest/tableTest",
     "pages/userInfo/userInfo",
     "pages/logs/logs",
